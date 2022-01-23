@@ -1,0 +1,663 @@
+@media (max-width: 787px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header__body{
+        height: 50px;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color:#FFF;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content:'';
+        background-color:#FFF;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .header__menu{
+        position: fixed;
+        display: block;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        overflow: auto;
+        height: 100%;
+        background-color: #F2AE4D;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active{
+        top: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__list{
+        display: block;
+    }
+    .header__list li {
+        margin: 0 0 20px 0;
+    }
+    .header__list1{
+        display: block;
+    }
+    .header__link{
+        font-size: 24px;
+    }
+    .header__list1 a{
+        font-size: 24px;
+    }
+
+}
+
+
+@media only screen and  (min-width: 1024px) and (max-width:1440px){
+    .block h1{
+        max-width: 85%;
+    }
+    .block p{
+        max-width: 65%;
+    }
+    .block2 div section i {
+        max-width: 30%;
+    }
+    #post-3{
+        width: 70%;
+    }
+    #post-6{
+        font-size: 14px;
+        max-width: 90%;
+    }
+    #bot3 span a{
+        margin-right: 29%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .block h1 {
+    max-width: 95%;
+    font-size: 40px;
+    }
+    .block p {
+        max-width: 80%;
+        font-size: 14px;
+    }
+    .block a {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .block1 ul li img{
+        max-width: 55%;
+    }
+    .block1 ul p {
+        font-size: 11px;
+    }
+    .block2 h3 {
+        font-size: 26px;
+    }
+    .block2 main a {
+    padding: 10px 20px;
+    font-size: 14px;
+    }
+    .block2 div section p {
+    font-size: 12px;
+    line-height: 16px;
+    }
+    .block2 div section i {
+    font-size: 13px;
+    line-height: 16px;
+    }
+    .block2 article{
+    justify-content: normal
+    }
+    #block2 a {
+    padding: 18px 23px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    }
+    .block3 h2 {
+    font-size: 24px;
+    }
+    .block3 p {
+    font-size: 12px;
+    }
+    .block3 a{
+    padding: 10px 21px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    }
+    .block4 h2{
+    padding: 10% 0 4%;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    }
+    .block4 p {
+    max-width: 182px;
+    }
+    .block5 div {
+    padding: 5% 0;
+    }
+    .block5 p {
+    width: 100%;
+    font-size: 14px;
+    }
+    .block5 h3 {
+    font-size: 20px;
+    }
+    .block5 ul{
+    align-items: normal;
+    }
+    #post-3{
+    font-size: 16px;
+    line-height: 22px;
+    }
+    #post-7 a{
+        letter-spacing:normal;
+    }
+    .block8{
+        padding-bottom: 23%;
+    }
+    #bot a{
+        font-size: 13px;
+    }
+    #bot1 a{
+        font-size: 13px;
+    }
+    #bot2 a{
+        font-size: 13px;
+    }
+    #bot3 a{
+        font-size: 13px;
+    }
+    #bot3 span a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .block h1{
+    font-size: 33px;
+    max-width: none;
+    }
+    .block p {
+    letter-spacing: 0.1px;
+    line-height: 17px;
+    font-size: 14px;
+    padding: 3% 0;
+    }
+    .block a {
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 8px 13px;
+    }
+    .block1 ul li img{
+        max-width: 55%;
+    }
+    .block1 ul p {
+        font-size: 11px;
+    }
+    .block2 h3 {
+        font-size: 24px;
+    }
+    .block2 main a {
+        padding: 8px 16px;
+        font-size: 12px;
+    letter-spacing: 1px;
+    }
+    .block2 div{
+        grid-template-columns: 1fr 1fr;
+    }
+    .block2 div section h4 {
+    font-size: 15px;
+    text-align: center;
+    }
+    .block2 div section p {
+    font-size: 10px;
+    line-height: 13px;
+    max-width: 95%;
+    text-align: center;
+    }
+    .block2 div section i {
+    font-size: 10px;
+    line-height: 10px;
+    max-width: none;
+    }
+    .block2 article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #block2 a {
+    padding: 18px 23px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    }
+    .block3 h2 {
+    font-size: 24px;
+    }
+    .block3 p {
+    font-size: 12px;
+    padding-left: 5%;
+    text-align: center;
+    }
+    .block3 a{
+    padding: 10px 21px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    }
+    .block4 h2{
+    padding: 10% 0 4%;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    }
+    .block4 div h3{
+    max-width: 95%;
+    }
+    .block4 p {
+    max-width: 95%;
+    }
+    .block5 div {
+    padding: 5% 0;
+    }
+    .block5 p {
+    width: 85%;
+    font-size: 14px;
+    }
+    .block5 h3 {
+    font-size: 20px;
+    }
+    .block5 ul{
+    align-items: normal;
+    }
+    #post-3{
+        width: 85%;
+        padding-bottom: 5%;
+    }
+    #post-7 a{
+    letter-spacing:normal;
+    }
+    .basement{
+    padding-bottom: 23%;
+    }
+    .basement div {
+    max-width: 90%;
+    }
+    #bot a{
+    font-size: 12px;
+    }
+    #bot1 a{
+    font-size: 12px;
+    }
+    #bot2 a{
+    font-size: 12px;
+    }
+    #bot3 a{
+    font-size: 12px;
+    }
+    #bot3 span a {
+    font-size: 13px;
+    }
+    #bot3 span a {
+        font-size: 14px;
+        margin: 3%;
+    }
+    #bot3 input {
+    padding: 4% 5%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .block h1 {
+    font-size: 28px;
+    max-width: none;
+    margin: 0 -15% 0 0
+    }
+    .block p {
+    max-width: none;
+    line-height: 16px;
+    font-size: 12px;
+    }
+    .block1{
+        height: 80px;
+    }
+    .block2 div {
+    grid-template-columns: 1fr 1fr;
+    }
+    .block2 div section h4{
+    text-align: center;
+    }
+    #block2 p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+    }
+    #block2 a {
+        padding: 9px 18px;
+    font-size: 12px;
+    }
+    .block2 main a {
+        padding: 6px 12px;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    .block3 h2 {
+    font-size: 21px;
+    text-align: center;
+    }
+    .block3 p {
+    padding-left: 3%;
+    }
+    .block3 a {
+    padding: 7px 18px;
+    font-size: 11px;
+    }
+    .block4 h2 {
+    font-size: 23px;
+    }
+    .block4 div h3 {
+    max-width: 100%;
+    text-align: center;
+    }
+    .block4 p {
+    max-width: 100%;
+    font-size: 14px;
+    text-align: center;
+    }
+    .block4 ul li img{
+        display: block;
+        margin: 0 auto;
+    }
+    .block5 ul{
+        display: block;
+    }
+    .block5 hr{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .block6 h2 {
+    font-size: 24px;
+    }
+    #post-3 {
+        padding: 0 0 5% 10%;
+    width: 90%;
+    line-height: 17px;
+    }
+    #post-5 {
+    font-size: 15px;
+    line-height: 20px;
+    }
+    #post-6 {
+    font-size: 12px;
+    line-height: 19px;
+    }
+    #post-7 a {
+    font-size: 9px;
+    }
+    #grid-1 img {
+    width: 50%;
+    }
+    #grid-3 img{
+        width: 50%;
+    }
+    .block7 p {
+    font-size: 25px;
+    }
+    #design {
+    font-size: 12px;
+    letter-spacing: 1px;
+    }
+    #allProducts {
+    font-size: 12px;
+    letter-spacing: 1px;
+    }
+    #bot a{
+    font-size: 10px;
+    }
+    #bot1 a{
+    font-size: 10px;
+    }
+    #bot2 a{
+    font-size: 10px;
+    }
+    #bot2 main{
+    max-width: 33%;
+    }
+    #bot3 a{
+    font-size: 10px;
+    }
+    #bot3 span a {
+    font-size: 11px;
+    line-height: 11px;
+    }
+    #bot3 input {
+    padding: 2% 0%;
+    }
+    .block8 div {
+    max-width: 95%;
+    }
+    .block8 img {
+        max-width: 80%;
+    }
+    .rating-area:not(:checked) > label {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .block h1 {
+    font-size: 22px;
+    }
+    .block a {
+        font-size: 10px;
+    }
+    .block p {
+    max-width: none;
+    line-height: 14px;
+    font-size: 11px;
+    }
+    .block1 ul p {
+    font-size: 9px;
+    }
+    .block2 h3 {
+    font-size: 17px;
+    }
+    .block2 main a {
+    padding: 5px 9px;
+    font-size: 10px;
+    }
+    .block2 div section {
+    margin: 0.8%;
+    }
+    #block2 p {
+        font-size: 11px;
+    }
+    #block2 a {
+        padding: 8px 9px;
+        font-size: 11px;
+        margin: 2%;
+    }
+    .block3 h2 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+    .block3 h3 {
+        font-size: 14px;
+    }
+    .block3 ul {
+        text-align: center;
+    }
+    .block3 a {
+        padding: 6px 13px;
+        letter-spacing: 0.5px;
+    }
+    .block4 h2 {
+        font-size: 20px;
+    }
+    .block4 div h3 {
+        font-size: 18px;
+    }
+    .block4 p {
+        font-size: 14px;
+    }
+    .block5 h3 {
+        font-size: 18px;
+        line-height: 30px;  
+    }
+    .block5 p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .block5 a{
+        font-size: 11px;
+    }
+    .block5 img {
+        max-width: 90%;
+    }
+    .rating-area:not(:checked) > label {
+        font-size: 20px;
+    }
+    .block6 h2 {
+        font-size: 20px;
+    }
+    #post-3 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #post-5 {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    #post-6 {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    #post-7 a {
+        font-size: 8px;
+    }
+    #grid-3 img {
+        width: 55%;
+    }
+    #grid-1 img {
+        width: 55%;
+    }
+    .block7 p {
+        font-size: 20px;
+    }
+    #design {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        padding: 1% 1.5%;
+    }
+    #allProducts{
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        padding: 1% 1.5%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .block h1 {
+        font-size: 20px;
+    }
+    .block p {
+        line-height: 12px;
+        font-size: 9px;
+        margin: 0 -15% 0 0;
+    }
+    .block a {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+        padding: 7px 6px;
+        text-align: center;
+    }
+    .block1{
+        display: contents;
+    }
+    .block1 ul p {
+        font-size: 9px;
+        padding-left: 0px;
+    }
+    .block2 h3 {
+        font-size: 14px;
+    }
+    .block2 main a {
+        padding: 3px 10px;
+        font-size: 8px;
+        text-align: center;
+    }
+    .block2 div section h4 {
+        font-size: 13px;
+    }
+    #block2 p {
+        font-size: 9px;
+        padding: 10px 0 0 0;
+    }
+    #block2 a {
+        padding: 9px 8px;
+        font-size: 9px;
+        margin: 2%;
+    }
+    .block3 h2 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .block3 p {
+        padding-left: 4%;
+    }
+    .block3 a {
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+    .block3 ul {
+        flex-wrap: wrap;
+    }
+    .block4 ul { 
+        flex-wrap: wrap;
+    }
+    #post-7 a {
+        font-size: 7px;
+    }
+    #bot3 span a {
+        font-size: 9px;
+        line-height: 9px;
+        margin: 0;
+    }
+}
